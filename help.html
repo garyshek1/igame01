@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Help &amp; How to Play — IGame01</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b1220;
+      --card: #121a2b;
+      --text: #e8eef8;
+      --muted: #9aa8bd;
+      --accent: #3ec8ea;
+      --line: #243044;
+      --chip: #1a2740;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f4f7fb;
+        --card: #ffffff;
+        --text: #122033;
+        --muted: #5b6b80;
+        --accent: #0e7c96;
+        --line: #d7e0ec;
+        --chip: #eef4fa;
+      }
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 28px 28px 36px;
+    }
+    h1 { margin: 0 0 8px; font-size: 1.85rem; }
+    h2 { margin: 28px 0 10px; font-size: 1.15rem; }
+    p, li { color: var(--text); }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    a { color: var(--accent); }
+    ul, ol { padding-left: 1.2rem; }
+    .tip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px 14px;
+      margin: 14px 0 0;
+      color: var(--muted);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0 4px;
+      font-size: 0.95rem;
+    }
+    th, td {
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card">
+      <h1>Help &amp; How to Play</h1>
+      <p class="meta">IGame01<br>A 100-round dodge-and-shoot arcade game</p>
+
+      <p>
+        Pilot your cute cyan ship, dodge falling enemies, collect gifts, and defeat the
+        boss at the end of every round. Clear all <strong>100 rounds</strong> to win.
+      </p>
+
+      <h2>Goal</h2>
+      <ul>
+        <li>Destroy enough enemies to fill the kill count for the round.</li>
+        <li>Survive contact with enemies and enemy bullets.</li>
+        <li>Beat the round boss to clear the round and unlock the next one.</li>
+        <li>Chase a high score — your best score and cleared rounds are saved on the device.</li>
+      </ul>
+
+      <h2>Controls</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Control</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Joystick (bottom left)</td>
+            <td>Move your ship in any direction — left, right, up, and down.</td>
+          </tr>
+          <tr>
+            <td>FIRE (bottom right)</td>
+            <td>Hold to shoot continuously.</td>
+          </tr>
+          <tr>
+            <td>Pause (II)</td>
+            <td>Pause or resume the game.</td>
+          </tr>
+          <tr>
+            <td>Sound (SND)</td>
+            <td>Turn sound on or off. Highlighted briefly at the start of each round.</td>
+          </tr>
+          <tr>
+            <td>Tap to start</td>
+            <td>On the title screen, tap anywhere to begin (or continue) playing.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="tip">Tip: Keep one thumb on the joystick and the other on FIRE. Move while shooting — standing still makes you an easy target later on.</p>
+
+      <h2>HUD</h2>
+      <ul>
+        <li><strong>Score / Best</strong> — current score and your saved high score.</li>
+        <li><strong>Round X/100</strong> — which round you are on.</li>
+        <li><strong>Kills</strong> — how many enemies you still need before the boss appears.</li>
+        <li><strong>Weapon</strong> — your current shot style.</li>
+        <li><strong>PWR</strong> — power stacks that make your shots stronger.</li>
+        <li><strong>Combo HOLD</strong> — combo stays active until you get hit.</li>
+        <li><strong>HP bar</strong> — your ship health above the player.</li>
+      </ul>
+
+      <h2>How a round works</h2>
+      <ol>
+        <li>A short banner shows the round name and the current enemy <strong>attack pattern</strong>.</li>
+        <li>Enemies fall from the top in that pattern. Shoot them and dodge their bodies and bullets.</li>
+        <li>When you reach the kill goal, a <strong>boss</strong> appears.</li>
+        <li>Defeat the boss to clear the round. You heal a bit before the next round starts.</li>
+        <li>After every <strong>5 cleared rounds</strong>, a full-screen ad may appear, then the next round continues.</li>
+      </ol>
+
+      <h2>Enemy attack patterns</h2>
+      <p>
+        Patterns change every <strong>five rounds</strong> (1–5, 6–10, 11–15, and so on).
+        The banner shows the pattern name so you know what to expect:
+      </p>
+      <ul>
+        <li>Wide Line, Column Drop, V Sweep, Diagonal</li>
+        <li>Twin Lane, Checker, Crossfire, Sine Wave</li>
+        <li>Pincer, Cluster — then the list repeats</li>
+      </ul>
+      <p>
+        Later enemies can chase your ship, dive faster when close, and shoot back.
+        Tanks are tougher and fire heavier shots.
+      </p>
+
+      <h2>Weapons &amp; gifts</h2>
+      <p>
+        Catch falling <strong>gifts</strong> to unlock stronger shot styles and add a power stack.
+        Owned weapons stack together, so collecting more gifts makes your firepower grow.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Weapon</th>
+            <th>Style</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Blaster</td>
+            <td>Reliable starter shot.</td>
+          </tr>
+          <tr>
+            <td>Laser</td>
+            <td>Fast, piercing-style fire.</td>
+          </tr>
+          <tr>
+            <td>Spread</td>
+            <td>Wide multi-shot coverage.</td>
+          </tr>
+          <tr>
+            <td>Plasma</td>
+            <td>Heavy damage with splash impact.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        If you continue from a later round, the game restores a fair loadout so you are not stuck on the starter Blaster.
+      </p>
+
+      <h2>Combo &amp; power</h2>
+      <ul>
+        <li>Destroying enemies builds a <strong>combo</strong>.</li>
+        <li>Combo does <strong>not</strong> time out on its own — it holds until an enemy or enemy bullet hits you.</li>
+        <li>Higher combo multiplies score and boosts shot power.</li>
+        <li>Power stacks (PWR) from gifts also make bullets stronger, up to a limit.</li>
+      </ul>
+      <p class="tip">Tip: Protect your combo. Dodging one bullet can be worth more than rushing into a tank for a quick kill.</p>
+
+      <h2>Progress &amp; save data</h2>
+      <ul>
+        <li>Cleared rounds are saved, so restarting continues from the next unlocked round.</li>
+        <li>High score and sound mute preference are also saved on your device.</li>
+        <li>Uninstalling the app clears this local progress.</li>
+      </ul>
+
+      <h2>Ads</h2>
+      <ul>
+        <li>A banner ad stays at the bottom while you play.</li>
+        <li>A full-screen ad can show after every 5th cleared round (5, 10, 15, …).</li>
+        <li>If an ad is not ready, the game continues so you are not stuck.</li>
+      </ul>
+
+      <h2>Quick tips</h2>
+      <ul>
+        <li>Stay near the middle-bottom so you have room to dodge left and right.</li>
+        <li>Prioritize tanks and dense formations before they fill the screen.</li>
+        <li>Grab gifts when it is safe — power matters more in later rounds.</li>
+        <li>During boss fights, keep moving; the middle shot often aims at you.</li>
+        <li>Use Pause if you need a break. Your progress stays until you quit the app.</li>
+      </ul>
+
+      <h2>Need more help?</h2>
+      <p>
+        Questions or feedback:
+        <a href="mailto:igame01@homayho.com">igame01@homayho.com</a>
+      </p>
+      <p>
+        Privacy details:
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </p>
+    </article>
+  </main>
+</body>
+</html>
